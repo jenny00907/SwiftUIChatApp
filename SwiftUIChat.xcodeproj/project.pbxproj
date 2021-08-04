@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D8E5E2826BA473E00F0BF36 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E5E2726BA473E00F0BF36 /* CustomTextField.swift */; };
+		8D8E5E2F26BA4DBC00F0BF36 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E5E2E26BA4DBC00F0BF36 /* MainTabView.swift */; };
+		8D8E5E3126BA4E4600F0BF36 /* ChannelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E5E3026BA4E4600F0BF36 /* ChannelsView.swift */; };
+		8D8E5E3326BA4E7600F0BF36 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E5E3226BA4E7600F0BF36 /* ChatView.swift */; };
+		8D8E5E3526BA4E8200F0BF36 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E5E3426BA4E8200F0BF36 /* ConversationView.swift */; };
+		8D8E5E3726BA4EC000F0BF36 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E5E3626BA4EC000F0BF36 /* SettingsView.swift */; };
 		8DD1E9DF26B7B01E0021E47B /* SwiftUIChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD1E9DE26B7B01E0021E47B /* SwiftUIChatApp.swift */; };
 		8DD1E9E126B7B01E0021E47B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD1E9E026B7B01E0021E47B /* ContentView.swift */; };
 		8DD1E9E326B7B01E0021E47B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DD1E9E226B7B01E0021E47B /* Assets.xcassets */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D8E5E2726BA473E00F0BF36 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		8D8E5E2E26BA4DBC00F0BF36 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		8D8E5E3026BA4E4600F0BF36 /* ChannelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsView.swift; sourceTree = "<group>"; };
+		8D8E5E3226BA4E7600F0BF36 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		8D8E5E3426BA4E8200F0BF36 /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+		8D8E5E3626BA4EC000F0BF36 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		8DD1E9DB26B7B01E0021E47B /* SwiftUIChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD1E9DE26B7B01E0021E47B /* SwiftUIChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIChatApp.swift; sourceTree = "<group>"; };
 		8DD1E9E026B7B01E0021E47B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +49,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D8E5E2926BA4D5800F0BF36 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E5E3626BA4EC000F0BF36 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8D8E5E2A26BA4D5A00F0BF36 /* Conversations */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E5E3426BA4E8200F0BF36 /* ConversationView.swift */,
+			);
+			path = Conversations;
+			sourceTree = "<group>";
+		};
+		8D8E5E2B26BA4D5C00F0BF36 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E5E3026BA4E4600F0BF36 /* ChannelsView.swift */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		8D8E5E2C26BA4D5E00F0BF36 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E5E3226BA4E7600F0BF36 /* ChatView.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		8D8E5E2D26BA4DA500F0BF36 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8D8E5E2E26BA4DBC00F0BF36 /* MainTabView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		8DD1E9D226B7B01D0021E47B = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +133,11 @@
 		8DD1E9ED26B7B02E0021E47B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8D8E5E2D26BA4DA500F0BF36 /* Main */,
+				8D8E5E2C26BA4D5E00F0BF36 /* Chats */,
+				8D8E5E2B26BA4D5C00F0BF36 /* Channels */,
+				8D8E5E2A26BA4D5A00F0BF36 /* Conversations */,
+				8D8E5E2926BA4D5800F0BF36 /* Settings */,
 				8DD1E9EE26B7B0300021E47B /* Authentication */,
 			);
 			path = View;
@@ -98,6 +155,7 @@
 		8DD1E9EF26B7B0380021E47B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8D8E5E2726BA473E00F0BF36 /* CustomTextField.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -193,9 +251,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DD1E9F426B7B0870021E47B /* LoginView.swift in Sources */,
+				8D8E5E3126BA4E4600F0BF36 /* ChannelsView.swift in Sources */,
 				8DD1E9E126B7B01E0021E47B /* ContentView.swift in Sources */,
 				8DD1E9DF26B7B01E0021E47B /* SwiftUIChatApp.swift in Sources */,
+				8D8E5E3326BA4E7600F0BF36 /* ChatView.swift in Sources */,
+				8D8E5E3726BA4EC000F0BF36 /* SettingsView.swift in Sources */,
 				8DD1E9F626B7B0940021E47B /* RegistrationView.swift in Sources */,
+				8D8E5E2826BA473E00F0BF36 /* CustomTextField.swift in Sources */,
+				8D8E5E2F26BA4DBC00F0BF36 /* MainTabView.swift in Sources */,
+				8D8E5E3526BA4E8200F0BF36 /* ConversationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
