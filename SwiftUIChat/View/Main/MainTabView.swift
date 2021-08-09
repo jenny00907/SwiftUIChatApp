@@ -8,17 +8,47 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @State private var selectedIndex = 0
+    //@EnvironmentObject var viewModel = AuthViewModel
+    
+    var tabTitle: String {
+        switch selectedIndex {
+        case 0: return "Chat"
+        case 1: return "Chanels"
+        case 2: return "Settings"
+        default: return ""
+        }
+    }
+    
     var body: some View {
-        TabView {
-            ConversationView()
-                .tabItem { Image(systemName: "bubble.left") }
-            ChannelsView()
-                .tabItem { Image(systemName: "bubble.left.and.bubble.right") }
-            SettingsView()
-                .tabItem { Image(systemName: "gear") }
+        NavigationView {
+            TabView(selection: $selectedIndex) {
+                ConversationView()
+                    .onTapGesture {
+                        selectedIndex = 0
+                    }
+                    .tabItem { Image(systemName: "bubble.left") }
+                    .tag(0)
+                ChannelsView()
+                    .onTapGesture {
+                        selectedIndex = 1
+                    }
+                    .tabItem { Image(systemName: "bubble.left.and.bubble.right") }
+                    .tag(1)
+                SettingsView()
+                    .onTapGesture {
+                        selectedIndex = 2
+                    }
+                    .tabItem { Image(systemName: "gear") }
+                    .tag(2)
+            }
+            .navigationTitle(tabTitle)
         }
     }
 }
+
+
+
 
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {

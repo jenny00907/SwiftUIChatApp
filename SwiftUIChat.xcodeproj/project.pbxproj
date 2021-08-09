@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D1ACDA626BBAE5D0080D6D8 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1ACDA526BBAE5D0080D6D8 /* EditProfileView.swift */; };
+		8D1ACDA826BBB2520080D6D8 /* SettingsHeaerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1ACDA726BBB2520080D6D8 /* SettingsHeaerView.swift */; };
+		8D1ACDAA26BBB3B80080D6D8 /* StatusSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1ACDA926BBB3B80080D6D8 /* StatusSelectorView.swift */; };
+		8D1ACDAC26BBB50E0080D6D8 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1ACDAB26BBB50E0080D6D8 /* SettingsCell.swift */; };
+		8D1ACDAE26BBB6280080D6D8 /* SettingsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1ACDAD26BBB6280080D6D8 /* SettingsCellViewModel.swift */; };
+		8D1ACDB026BBB79B0080D6D8 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1ACDAF26BBB79B0080D6D8 /* StatusViewModel.swift */; };
 		8D8E5E2826BA473E00F0BF36 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E5E2726BA473E00F0BF36 /* CustomTextField.swift */; };
 		8D8E5E2F26BA4DBC00F0BF36 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E5E2E26BA4DBC00F0BF36 /* MainTabView.swift */; };
 		8D8E5E3126BA4E4600F0BF36 /* ChannelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8E5E3026BA4E4600F0BF36 /* ChannelsView.swift */; };
@@ -22,6 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D1ACDA526BBAE5D0080D6D8 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		8D1ACDA726BBB2520080D6D8 /* SettingsHeaerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHeaerView.swift; sourceTree = "<group>"; };
+		8D1ACDA926BBB3B80080D6D8 /* StatusSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusSelectorView.swift; sourceTree = "<group>"; };
+		8D1ACDAB26BBB50E0080D6D8 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		8D1ACDAD26BBB6280080D6D8 /* SettingsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellViewModel.swift; sourceTree = "<group>"; };
+		8D1ACDAF26BBB79B0080D6D8 /* StatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
 		8D8E5E2726BA473E00F0BF36 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		8D8E5E2E26BA4DBC00F0BF36 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		8D8E5E3026BA4E4600F0BF36 /* ChannelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsView.swift; sourceTree = "<group>"; };
@@ -53,6 +65,10 @@
 			isa = PBXGroup;
 			children = (
 				8D8E5E3626BA4EC000F0BF36 /* SettingsView.swift */,
+				8D1ACDA526BBAE5D0080D6D8 /* EditProfileView.swift */,
+				8D1ACDA726BBB2520080D6D8 /* SettingsHeaerView.swift */,
+				8D1ACDA926BBB3B80080D6D8 /* StatusSelectorView.swift */,
+				8D1ACDAB26BBB50E0080D6D8 /* SettingsCell.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -170,6 +186,8 @@
 		8DD1E9F126B7B03E0021E47B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8D1ACDAD26BBB6280080D6D8 /* SettingsCellViewModel.swift */,
+				8D1ACDAF26BBB79B0080D6D8 /* StatusViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -250,12 +268,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D1ACDB026BBB79B0080D6D8 /* StatusViewModel.swift in Sources */,
+				8D1ACDAC26BBB50E0080D6D8 /* SettingsCell.swift in Sources */,
+				8D1ACDAE26BBB6280080D6D8 /* SettingsCellViewModel.swift in Sources */,
 				8DD1E9F426B7B0870021E47B /* LoginView.swift in Sources */,
 				8D8E5E3126BA4E4600F0BF36 /* ChannelsView.swift in Sources */,
+				8D1ACDAA26BBB3B80080D6D8 /* StatusSelectorView.swift in Sources */,
 				8DD1E9E126B7B01E0021E47B /* ContentView.swift in Sources */,
+				8D1ACDA626BBAE5D0080D6D8 /* EditProfileView.swift in Sources */,
 				8DD1E9DF26B7B01E0021E47B /* SwiftUIChatApp.swift in Sources */,
 				8D8E5E3326BA4E7600F0BF36 /* ChatView.swift in Sources */,
 				8D8E5E3726BA4EC000F0BF36 /* SettingsView.swift in Sources */,
+				8D1ACDA826BBB2520080D6D8 /* SettingsHeaerView.swift in Sources */,
 				8DD1E9F626B7B0940021E47B /* RegistrationView.swift in Sources */,
 				8D8E5E2826BA473E00F0BF36 /* CustomTextField.swift in Sources */,
 				8D8E5E2F26BA4DBC00F0BF36 /* MainTabView.swift in Sources */,
